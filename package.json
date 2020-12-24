@@ -1,6 +1,6 @@
 {
   "name": "vtex-google-auth-cli-beta",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "author": "MatheusR42",
   "license": "MIT",
@@ -12,7 +12,8 @@
   },
   "scripts": {
     "build": "rm -rf ./dist && tsc && tsc --project tsconfig.types.json",
-    "dev": "rm -rf ./dist && tsc --watch"
+    "dev": "rm -rf ./dist && tsc --watch",
+    "prepublishOnly": "yarn build"
   },
   "repository": "https://github.com/MatheusR42/vtex-google-auth-cli/",
   "keywords": [
