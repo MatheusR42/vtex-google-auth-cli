@@ -1,4 +1,3 @@
-import dotenv from 'dotenv'
 // puppeteer-extra is a drop-in replacement for puppeteer,
 // it augments the installed puppeteer with plugin functionality
 import puppeteer from 'puppeteer-extra'
@@ -8,7 +7,6 @@ import StealthPlugin from 'puppeteer-extra-plugin-stealth'
 
 import { PuppeteerCookie } from './typings/index'
 
-dotenv.config()
 puppeteer.use(StealthPlugin())
 
 const getVtexIdclientAutCookie = async (
@@ -52,17 +50,6 @@ const getVtexIdclientAutCookie = async (
 
   return VtexIdclientAutCookie ? VtexIdclientAutCookie.value : null
 }
-
-const {
-  ACCOUNT_NAME = '',
-  GOOGLE_AUTH_EMAIL = '',
-  GOOGLE_AUTH_PASSWORD = ''
-} = process.env
-
-getVtexIdclientAutCookie(ACCOUNT_NAME, GOOGLE_AUTH_EMAIL, GOOGLE_AUTH_PASSWORD)
-  .then(VtexIdclientAutCookie => {
-    console.log(VtexIdclientAutCookie)
-  })
 
 export {
   getVtexIdclientAutCookie

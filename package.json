@@ -1,7 +1,8 @@
 {
   "name": "vtex-google-auth-cli",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "author": "MatheusR42",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -12,6 +13,9 @@
   "scripts": {
     "build": "rm -rf ./dist && tsc && tsc --project tsconfig.types.json",
     "dev": "rm -rf ./dist && tsc --watch"
+  },
+  "bin": {
+    "get-token": "dist/bin/get-token.js"
   },
   "devDependencies": {
     "@types/node": "^14.14.16",
