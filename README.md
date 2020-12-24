@@ -6,9 +6,11 @@ A tool to get VtexIdclientAutCookie Token by CLI
 - Set these environment variables
 
 GOOGLE_AUTH_EMAIL
+
 GOOGLE_AUTH_PASSWORD
+
 ACCOUNT_NAME
 
 - Run index.js. It will return VtexIdclientAutCookie token
 
-*Obs:* You must use a google account with two factor authentication disabled.
+**Obs:** You must use a google account with two factor authentication disabled.
