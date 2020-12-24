@@ -15,7 +15,7 @@ npm i -g vtex-google-auth-cli
 
   GOOGLE_AUTH_PASSWORD (Your Google password)
 
-  ACCOUNT_NAME
+  ACCOUNT_NAME (name of the vtex store)
 
 - Run:
 ```
