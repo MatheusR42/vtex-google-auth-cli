@@ -18,6 +18,10 @@
   "keywords": [
     "vtex"
   ],
+  "files": [
+    "dist/**/*",
+    "src/**/*"
+  ],
   "description": "A tool to get VtexIdclientAutCookie Token by CLI",
   "bin": {
     "get-token": "dist/bin/get-token.js"
