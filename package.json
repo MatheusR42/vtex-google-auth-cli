@@ -14,6 +14,11 @@
     "build": "rm -rf ./dist && tsc && tsc --project tsconfig.types.json",
     "dev": "rm -rf ./dist && tsc --watch"
   },
+  "repository": "https://github.com/MatheusR42/vtex-google-auth-cli/",
+  "keywords": [
+    "vtex"
+  ],
+  "description": "A tool to get VtexIdclientAutCookie Token by CLI",
   "bin": {
     "get-token": "dist/bin/get-token.js"
   },
