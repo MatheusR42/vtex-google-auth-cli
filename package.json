@@ -16,7 +16,8 @@
   },
   "repository": "https://github.com/MatheusR42/vtex-google-auth-cli/",
   "keywords": [
-    "vtex"
+    "vtex",
+    "CLI"
   ],
   "files": [
     "dist/**/*",
@@ -24,7 +25,7 @@
   ],
   "description": "A tool to get VtexIdclientAutCookie Token by CLI",
   "bin": {
-    "get-token": "dist/bin/get-token.js"
+    "vtex-google-auth": "dist/bin/get-token.js"
   },
   "devDependencies": {
     "@types/node": "^14.14.16",
